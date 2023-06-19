@@ -2,6 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
+  margin-top: 35px;
 }
 
 #root {
@@ -20,6 +21,12 @@ body {
   justify-content: center;
   height: 50px;
   box-shadow: 0 40px 80px #FBE4E0;
+
+  @media (max-width: 506px) {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .mainTitle::before {
@@ -37,7 +44,14 @@ body {
 .item {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 506px) {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .itemTitle {
@@ -48,12 +62,17 @@ body {
 .inputContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .inputContainer__input {
   border-radius: 20px 0 0 20px;
   font-size: 20px;
   text-align: center;
+
+  @media (max-width: 506px) {
+    border-radius: 20px;
+  }
 }
 
 .inputContainer__button {
@@ -72,6 +91,10 @@ body {
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
+
+  @media (max-width: 361px) {
+    margin-top: 7px;
+  }
 }
 
 .inputContainer__button:hover {
